@@ -1,6 +1,6 @@
-baseURL: http://something-fresh.org/
+baseURL: http://bluespark.ro/
 languageCode: en-us
-title: Hugo Fresh Theme
+title: BlueSpark Technologies
 
 module:
   # uncomment line below for local development of module
@@ -27,8 +27,8 @@ params:
   # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
   # preloader: false
   navbarlogo:
-  # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
+    # Logo (from static/images/logos/___)
+    image: logos/bluespark-logo.png
     link: /
     # Default width/height. Uncomment if you need to change
     # width: 112
@@ -38,9 +38,9 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: Manage. Deploy.
+    title: Your vision, our expertise.
     # Hero subtitle (optional)
-    subtitle: Lorem ipsum sit dolor amet is dummy text used by the typography industry
+    subtitle: Creating Reliable, Future-Ready Solutions
     # Button text
     buttontext: Get started
     # Where the main hero button links to

@@ -1268,6 +1268,12 @@ services
         transition: $t-lg;
     }
 
+    &.mil-service-card-sm-dark {
+        &:before {
+            background-color: $blue;
+        }
+    }
+
     &:hover {
         & p {
             opacity: 1;
@@ -1301,12 +1307,23 @@ services
 
 .mil-services-grid {
     border-top: solid 1px $lt-10;
+    
+    &.mil-services-grid-dark {
+        border-top: solid 1px $dt-10;
+    }
 
     & .mil-services-grid-item {
         border-right: solid 1px $lt-10;
 
+        &.mil-services-grid-item-dark {
+            border-right: solid 1px $dt-10;
+        }
+
         &:first-child {
             border-left: solid 1px $lt-10;
+        }
+        &:first-child.mil-services-grid-item-dark {
+            border-left: solid 1px $dt-10;
         }
     }
 

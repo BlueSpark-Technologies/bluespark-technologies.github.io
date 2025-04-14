@@ -1,31 +1,36 @@
 {
-    "title1": "Unique <span class=\"mil-thin\">Ideas</span>",
-    "title2": "For Your <span class=\"mil-thin\">Business.</span>",
-    "subtitle": "Professionals focused on helping your brand<br/> grow and move forward.",
-    "button": {
-        "link": "/services",
-        "label": "What we do"
-    },
+    "title1": "Services <span class=\"mil-thin\">that drives growth</span>",
+    "subtitle": "INOVATIVE SOLUTIONS",
     "items": [
         {
-            "title": "Branding and <br>Identity Design",
-            "text": "Our creative agency is a team of professionals focused on helping your brand grow.",
-            "link": "/services/service-1"
+            "title": "Web development",
+            "text": "Build high performance web applications. Craft intuitive interfaces to enhance user experience and drive online sales.",
+            "description": "<p>In today's digital landscape, a compelling online presence is crucial. At Blue Spark Technologies, we excel in web development that captivates and engages your audience. Our skilled developers utilize the latest technologies to create responsive, user-friendly websites that reflect your brand identity. Whether you need a simple landing page or a complex e-commerce platform, we tailor our approach to meet your goals. We focus on performance, security, and scalability, ensuring that your website not only looks great but also functions seamlessly across all devices. Partner with us to build a website that drives results and boosts your visibility.</p>"
         },
         {
-            "title": "Website Design <br>and Development",
-            "text": "Our creative agency is a team of professionals focused on helping your brand grow.",
-            "link": "/services/service-2"
+            "title": "Data Engineering and Machine Learning",
+            "text": "Use real-time insights and analytics to optimize operations and boost profits. Make informed decisions faster",
+            "description": "<p>Unlock the potential of your data with our machine learning solutions at Blue Spark Technologies. We harness advanced algorithms to analyze data, identify patterns, and deliver actionable insights that help you make informed decisions. Our team of data scientists and engineers work collaboratively to develop tailored models that cater to your specific industry needs. From predictive analytics to automation of tasks, our solutions are designed to enhance efficiency and drive innovation within your organization.</p>"
         },
         {
-            "title": "Advertising and <br>Marketing Campaigns",
-            "text": "Our creative agency is a team of professionals focused on helping your brand grow.",
-            "link": "/services/service-3"
+            "title": "Microservices",
+            "text": "Design Modular, Scalable Architectures. Easily update and deploy features without disrupting your entire system",
+            "description": "<p>Our microservices approach allows you to break down complex applications into smaller, manageable services that can be developed, tested, and deployed independently. This flexibility enhances scalability, improves fault isolation, and accelerates time-to-market. By leveraging our expertise in microservices, you can achieve greater agility and responsiveness to changing business demands, while optimizing resource utilization and reducing overall development costs.</p>"
         },
         {
-            "title": "Creative Consulting <br>and Development",
-            "text": "Our creative agency is a team of professionals focused on helping your brand grow.",
-            "link": "/services/service-4"
+            "title": "Infrastructure Cost Optimization",
+            "text": "Is your infrastructure bill too high? Our custom optimization workflow can help you identify and drastically reduce it.",
+            "description": "<p>Our <span class='mil-muted mil-thin'>Infrastructure Cost Optimization</span> service empowers DevOps teams to efficiently manage cloud resources and reduce expenses. By leveraging tools and metrics, we analyze and optimize your entire resource inventory, implementing <span class='mil-muted mil-thin'>Infrastructure as Code (IaC)</span> solutions with <span class='mil-muted mil-thin'>Terraform</span> for seamless configuration and deployment. Our approach includes setting up <span class='mil-muted mil-thin'>budgets and alerts</span> to proactively monitor spending, ensuring cost-effective resource allocation throughout the development lifecycle. With dedicated support from seasoned DevOps engineers, we help maintain high-performance infrastructure without overspending.</p>"
+        },
+        {
+            "title": "Test Automation as a Service",
+            "text": "Use out highly qualified test automation services to ensure your solutions are safe and functional",
+            "description": "<p>Our <span class='mil-muted mil-thin'>Test Automation as a Service</span> streamlines and enhances testing across all stages of development, from <span class='mil-muted mil-thin'>functional</span> and <span class='mil-muted mil-thin'>integration</span> tests to <span class='mil-muted mil-thin'>post-deployment</span> and <span class='mil-muted mil-thin'>performance</span> validation. We automate UI testing, data validation, and data pipeline monitoring to ensure robust application performance. Built on <span class='mil-muted mil-thin'>continuous integration (CI)</span> principles, our service incorporates a rich set of <span class='mil-muted mil-thin'>libraries and plugins</span> that simplify test development and integration, allowing teams to easily build upon existing frameworks. With a focus on scalability and reliability, we enable faster, more efficient testing to maintain high-quality standards across every release.</p>"
+        },
+        {
+            "title": "Custom Software Development ",
+            "text": "Turn your ideas into market-ready solutions. Scale with your business needs.",
+            "description": "<p>At <span class='mil-muted mil-thin'>BlueSpark Technologies,</span> we specialize in crafting custom software solutions that align with your specific business objectives. Our team of experienced developers works closely with you to understand your challenges and deliver a product that enhances efficiency and drives growth. From initial concept to deployment, we ensure that each step of the development process is tailored to your requirements. Our agile methodology allows us to adapt to changes quickly, providing you with a solution that evolves along with your business. Let us help you transform your ideas into powerful software that empowers your organization.</p>"
         }
     ]
 }

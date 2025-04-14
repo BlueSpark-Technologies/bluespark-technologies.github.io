@@ -21,6 +21,7 @@ body {
     color: $dt-50;
     line-height: 150%;
     overscroll-behavior: none;
+    scroll-behavior: smooth!important;
 
     @media screen and (max-width: 768px) {
         font-size: $text - 1px;
@@ -290,6 +291,10 @@ a {
     color: $dt-50;
 }
 
+.mil-blue-soft {
+    color: $blue;
+}
+
 .mil-marker {
     background-color: $accent;
     padding: 0 5px;
@@ -347,7 +352,7 @@ a {
 
     &.mil-suptitle-dark {
         &:before {
-            background-color: $dark;
+            background-color: $blue;
             opacity: .1;
         }
     }
@@ -488,6 +493,19 @@ button
     font-weight: 500;
     transition: $t-md;
 
+    &.mil-button-dark {
+        background-color: $blue;
+        color: $light;
+
+        & svg {
+            background-color: $light;
+
+            & path {
+                fill: $blue;
+            }
+        }
+    }
+
     & span {
         white-space: nowrap;
     }
@@ -524,6 +542,16 @@ button
 
             & path {
                 fill: $dark;
+            }
+        }
+
+        &.mil-icon-button-sm-dark {
+            & svg {
+                background-color: $blue;
+
+                & path {
+                    fill: $light;
+                }
             }
         }
     }

@@ -1,0 +1,25 @@
+{
+  "title": "Dynamic Pricing",
+  "subtitle": "Improve profit margin and decrease the manual work in pricing management.",
+  "image": {
+    "src": "/img/photo/dynamic-pricing-hero.jpeg",
+    "alt": "Dynamic Pricing"
+  },
+  "description": {
+    "client": "Large Online Retailer",
+    "industry": "Retail",
+    "solution": "Dynamic Pricing",
+    "objectives": "Improve profit margin and decrease the manual work in pricing management for a big retail business from Germany.",
+    "challenges": [
+      "<p><span class='mil-bold mil-dark'>Legacy System Complexity: </span>The existing system was built on outdated technologies and was running inside the client's Data Warehouse System. We had to migrate it to a new microservices architecture.</p>",
+      "<p><span class='mil-bold mil-dark'>Scalability and Performance: </span>Switching to the new pricing platform required to integrate real-time notifications and events that could trigger price changes, adding increased complexity on managing the scaling and performance of our microservices.</p>",
+      "<p><span class='mil-bold mil-dark'>Complex Pricing Strategies: </span>The web application for managing the pricing strategies had to be able to support complex pricing formula definitions based on multiple variables.</p>"
+    ],
+    "solutionDetails": [
+      "<p>The project involved designing a user-friendly interface, integrating with the client's ERP system and Data Warehouse, and implementing a powerful pricing strategy.</p>",
+      "<p>By leveraging competitors monitoring we provided insights that helped the client optimize their pricing strategies and enhance their profit margin by at least 10%.</p>",
+      "<p>The price adjustemnts were done in real time, based on multiple factors: pricing channel strategies formulas, competitors pricing, pricing campaings or inventory health strategies.</p>",
+      "<p>Choosing a microservices architecture helped us develop and launch faster through independent teams. As the number of services grew so did the challenge of managing the orchestration of their communications. We used <span class='mil-bold mil-dark'>Docker</span> and <span class='mil-bold mil-dark'>Kubernetes</span> for containerization and orchestration.</p>"
+    ]
+  }
+}

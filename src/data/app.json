@@ -1,6 +1,6 @@
 {
     "settings": {
-        "siteName": "Ashley",
+        "siteName": "Custom Software Solutions | Blue Spark Technologies",
         "formspreeURL": "https://formspree.io/f/your_api_key",
         "mailchimp": {
             "url": "",
@@ -9,92 +9,34 @@
     },
     "header": {
         "logo": {
-            "symbol": "A.",
-            "link": "/"
+            "link": "/",
+            "image": "/img/icons/logo.ico"
         },
         "menu": [
             {
-                "label": "Homepage",
+                "label": "Home",
                 "link": "/",
-                "children": [
-                    {
-                        "label": "Landing Page",
-                        "link": "/"
-                    },
-                    {
-                        "label": "Personal",
-                        "link": "/home-2"
-                    },
-                    {
-                        "label": "Home Slider",
-                        "link": "/projects-3"
-                    }
-                ]
+                "children": []
             },
             {
-                "label": "Portfolio",
-                "link": "/projects",
-                "children": [
-                    {
-                        "label": "Grid Type 1",
-                        "link": "/projects"
-                    },
-                    {
-                        "label": "Grid Type 2",
-                        "link": "/projects-2"
-                    },
-                    {
-                        "label": "Slider",
-                        "link": "/projects-3"
-                    }
-                ]
+                "label": "About",
+                "link": "/#about",
+                "children": []
             },
             {
                 "label": "Services",
-                "link": "/services",
-                "children": [
-                    {
-                        "label": "Services List",
-                        "link": "/services"
-                    },
-                    {
-                        "label": "Single Service",
-                        "link": "/services/service-1"
-                    }
-                ]
+                "link": "/#services",
+                "children": []
             },
             {
-                "label": "Blog",
-                "link": "/blog",
-                "children": [
-                    {
-                        "label": "Blog list",
-                        "link": "/blog"
-                    },
-                    {
-                        "label": "Publication",
-                        "link": "/blog/play-to-your-strength-and-supercharge-your-business-4"
-                    }
-                ]
+                "label": "Our Work",
+                "link": "/#projects",
+                "children": []
             },
             {
                 "label": "Contact",
-                "link": "/contact",
-                "children": 0
-            },
-            {
-                "label": "Other",
-                "link": "/team",
-                "children": [
-                    {
-                        "label": "Team",
-                        "link": "/team"
-                    },
-                    {
-                        "label": "404",
-                        "link": "/404"
-                    }
-                ]
+                "link": "/#contact",
+                "children": []
             }
         ]
     },
@@ -109,20 +51,20 @@
                 "link": "/"
             },
             {
-                "label": "Portfolio",
-                "link": "/projects"
+                "label": "About",
+                "link": "/about"
             },
             {
                 "label": "Services",
                 "link": "/services"
             },
             {
-                "label": "Contact",
-                "link": "/contact"
+                "label": "Our Work",
+                "link": "/projects"
             },
             {
-                "label": "Blog",
-                "link": "/blog"
+                "label": "Contact",
+                "link": "/contact"
             }
         ]
     },

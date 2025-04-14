@@ -1,0 +1,23 @@
+{
+  "title": "Intelligent Forecasting",
+  "subtitle": "Data-driven inventory management. Trend and seasonality analysis through machine learning algorithms.",
+  "image": {
+    "src": "/img/photo/df-hero.jpeg",
+    "alt": "Intelligent Forecasting"
+  },
+  "description": {
+    "client": "Large Online Retailer",
+    "industry": "Retail",
+    "solution": "Demand Forecasting",
+    "objectives": "Improve target stock levels management",
+    "challenges": [
+      "<p><span class='mil-bold'>Data Integration: </span>Build a data lake and an data engineering pipeline for historical data.</p>",
+      "<p><span class='mil-bold'>Scalability and Performance: </span>Find the best cloud solution for large data preprocessing.</p>",
+      "<p><span class='mil-bold'>Complex Forecasting Models and Algorithms: </span>FInd and tune the machine learning models for the best forecasting results.</p>"
+    ],
+    "solutionDetails": [
+      "<p>Through iterative training we found the best machine learning algorithms to create a predictive tool for this consumer electronics retailer. By analysing historical data and identifying patterns, we developed a solution that enables the client to forecast market trends and make informed decisions on their inventory management.</p>",
+      "<p>Our data engineering team ensured that the system could handle large datasets efficiently, while our machine learning experts fine-tuned the algorithms for maximum accuracy.</p>"
+    ]
+  }
+}

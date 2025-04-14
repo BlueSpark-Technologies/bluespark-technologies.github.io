@@ -1,17 +1,13 @@
-import React from "react";
-import Data from "@data/sections/services.json";
+import Data from "@data/sections/our-work.json";
+import Link from "next/link";
+import ArrowIcon from "@layouts/svg-icons/Arrow";
 import Pentagon from "@layouts/pentagon/Index";
-import { Accordion } from "@/src/common/utilits";
 
-const ServicesSection = () => {
-  React.useEffect(() => {
-    Accordion();
-  }, []);
+const OurWork = () => {
   return (
     <>
-      {/* services */}
-      <section className="mil-dark-bg" id="services">
-        <div className="mi-invert-fix">
+      {/* our work */}
+      <section id="projects">
           <div className="mil-animation-frame">
             <div
               className="mil-animation mil-position-1 mil-scale"
@@ -35,7 +31,7 @@ const ServicesSection = () => {
               <div className="row">
                 <div className="col-lg-10">
                   <span
-                    className="mil-suptitle mil-light-soft mil-suptitle-right mil-up"
+                    className="mil-suptitle mil-suptitle-dark mil-blue-soft mil-suptitle-right mil-up"
                     dangerouslySetInnerHTML={{ __html: Data.subtitle }}
                   />
                 </div>
@@ -43,45 +39,36 @@ const ServicesSection = () => {
 
               <div className="mil-complex-text justify-content-center mil-up mil-mb-15">
                 <h2
-                  className="mil-h1 mil-muted mil-center"
+                  className="mil-h1 mil-dark mil-center"
                   dangerouslySetInnerHTML={{ __html: Data.title1 }}
                 />
               </div>
             </div>
 
-            <div className="row mil-services-grid m-0 pt-4">
+            <div className="row mil-services-grid mil-services-grid-dark m-0">
               {Data.items.map((item, key) => (
                 <div
-                  className="mil-accordion-group mil-up"
-                  key={`service-list-${key}`}
+                  key={`services-item-${key}`}
+                  className="col-md-6 col-lg-6 mil-services-grid-item mil-services-grid-item-dark p-0"
                 >
-                  <div className="mil-accordion-menu">
+                  <Link href={item.link} className="mil-service-card-sm mil-service-card-sm-dark mil-up">
                     <h5
-                      className="mil-muted"
-                      dangerouslySetInnerHTML={{ __html: item.title + `<br/><span class='mil-light-soft mil-thin mil-text-sm'>${item.text}</span>` }}
+                      className="mil-dark mil-mb-30"
+                      dangerouslySetInnerHTML={{ __html: item.title }}
                     />
-
-                    <div className="mil-symbol mil-h3">
-                      <div className="mil-plus">+</div>
-                      <div className="mil-minus">-</div>
+                    <p className="mil-dark-soft mil-mb-30">{item.text}</p>
+                    <div className="mil-button mil-icon-button-sm mil-icon-button-sm-dark mil-arrow-place">
+                      <ArrowIcon />
                     </div>
-                    
-                  </div>
-
-                  <div
-                    className="mil-accordion-content mil-light-soft"
-                    dangerouslySetInnerHTML={{ __html: item.description }}
-                    style={{transition: "all 0.3s ease-in-out"}}
-                  />
+                  </Link>
                 </div>
               ))}
             </div>
           </div>
-        </div>
       </section>
-      {/* services end */}
+      {/* our work end */}
     </>
   );
 };
 
-export default ServicesSection;
+export default OurWork;

@@ -38,13 +38,13 @@ const HeroOne = () => {
                                 <span>{Data.button1.label}</span>
                                 <ArrowIcon />
                             </Link>
-
+{/* 
                             <Link href={Data.button2.link} className="mil-link mil-muted mil-arrow-place">
                                 <span>{Data.button2.label}</span>
                                 <ArrowIcon />
-                            </Link>
+                            </Link> */}
 
-                            <div className="mil-circle-text">
+                            {/* <div className="mil-circle-text">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enableBackground="new 0 0 300 300" xmlSpace="preserve" className="mil-ct-svg mil-rotate" data-value="360">
                                     <defs>
                                         <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
@@ -53,7 +53,7 @@ const HeroOne = () => {
                                     <g>
                                         <use xlinkHref="#circlePath" fill="none" />
                                         <text style={{"letterSpacing": "6.5px"}}>
-                                            {/* circle text */}
+                                            == circle text ==
                                             <textPath xlinkHref="#circlePath">Scroll down - Scroll down - </textPath>
                                         </text>
                                     </g>
@@ -61,7 +61,7 @@ const HeroOne = () => {
                                 <a href="#about" className="mil-button mil-arrow-place mil-icon-button mil-arrow-down">
                                     <ArrowIcon />
                                 </a>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>

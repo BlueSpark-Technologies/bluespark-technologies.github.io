@@ -1,0 +1,16 @@
+{
+    "title1": "Innovative technology <span class='mil-thin'>for your needs</span>",
+    "subtitle": "<span class='mil-upper'>Tailored software solutions</span>",
+    "items": [
+        {
+            "title": "Dynamic Pricing",
+            "text": "Improve profit margin and decrease the manual work in pricing management.",
+            "link": "/projects/dynamic-pricing"
+        },
+        {
+            "title": "Intelligent Forecasting",
+            "text": "Data-driven inventory management. Trend and seasonality analysis through machine learning algorithms.",
+            "link": "/projects/intelligent-forecasting"
+        }
+    ]
+}

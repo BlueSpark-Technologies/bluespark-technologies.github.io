@@ -1,10 +1,8 @@
 import Link from "next/link";
 import AppData from "@data/app.json";
 import ArrowIcon from "@layouts/svg-icons/Arrow";
-import { useRouter } from 'next/router';
 
 const DefaultFooter = ( { extraClass } ) => {
-  const { asPath } = useRouter();
   
   return (
     <>
@@ -17,15 +15,10 @@ const DefaultFooter = ( { extraClass } ) => {
 
                         <div className="mil-muted mil-logo mil-up mil-mb-30">{AppData.footer.logo.text}</div>
 
-                        <p className="mil-light-soft mil-up mil-mb-30">Subscribe our newsletter:</p>
-
-                        <form action={AppData.settings.mailchimp.url} method="post" target="_blank" className="mil-subscribe-form mil-up">
-                            <input type="email" placeholder="Enter our email" name="EMAIL" required />
-                            <input type="hidden" name={AppData.settings.mailchimp.key} />
-                            <button type="submit" className="mil-button mil-icon-button-sm mil-arrow-place">
-                                <ArrowIcon />
-                            </button>
-                        </form>
+                        <Link href={AppData.button.link} className="mil-button mil-button mil-arrow-place">
+                            <span>{AppData.button.label}</span>
+                            <ArrowIcon />
+                        </Link>
 
                     </div>
                     <div className="col-md-7 col-lg-6">
@@ -35,7 +28,7 @@ const DefaultFooter = ( { extraClass } ) => {
                                 <nav className="mil-footer-menu mil-mb-60">
                                     <ul>
                                         {AppData.footer.menu.map((item, key) => (
-                                        <li key={`footer-menu-item-${key}`} className={((asPath.indexOf( item.link ) != -1 && item.link != '/' ) || asPath == item.link ) ? "mil-active mil-up" : "mil-up"}>
+                                        <li key={`footer-menu-item-${key}`} className="mil-up">
                                             <Link href={item.link}>{item.label}</Link>
                                         </li>
                                         ))}
@@ -46,10 +39,10 @@ const DefaultFooter = ( { extraClass } ) => {
                             <div className="col-md-6 col-lg-5">
 
                                 <ul className="mil-menu-list mil-up mil-mb-60">
-                                    <li><a href="#." className="mil-light-soft">Privacy Policy</a></li>
-                                    <li><a href="#." className="mil-light-soft">Terms and conditions</a></li>
-                                    <li><a href="#." className="mil-light-soft">Cookie Policy</a></li>
-                                    <li><a href="#." className="mil-light-soft">Careers</a></li>
+                                    <li><a href="#" className="mil-light-soft">Privacy Policy</a></li>
+                                    <li><a href="#" className="mil-light-soft">Terms and conditions</a></li>
+                                    <li><a href="#" className="mil-light-soft">Cookie Policy</a></li>
+                                    <li><a href="#" className="mil-light-soft">Careers</a></li>
                                 </ul>
 
                             </div>
@@ -57,7 +50,7 @@ const DefaultFooter = ( { extraClass } ) => {
                     </div>
                 </div>
 
-                <div className="row justify-content-between flex-sm-row-reverse">
+                {/* <div className="row justify-content-between flex-sm-row-reverse">
                     <div className="col-md-7 col-lg-6">
 
                         <div className="row justify-content-between">
@@ -93,7 +86,7 @@ const DefaultFooter = ( { extraClass } ) => {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </footer>

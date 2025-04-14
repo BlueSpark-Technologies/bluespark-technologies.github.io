@@ -35,36 +35,36 @@
             },
             {
                 "label": "Contact",
-                "link": "/#contact",
+                "link": "/contact",
                 "children": []
             }
         ]
     },
     "footer": {
         "logo": {
-            "text": "Ashley."
+            "text": "Blue Spark Technologies"
         },
-        "copy": "© 2023 Ashley. All Rights Reserved.",
+        "copy": "© 2025 Blue Spark Technologies. All Rights Reserved.",
         "menu": [
             {
                 "label": "Home",
-                "link": "/"
+                "link": "/",
+                "children": []
             },
             {
                 "label": "About",
-                "link": "/about"
+                "link": "/#about",
+                "children": []
             },
             {
                 "label": "Services",
-                "link": "/services"
+                "link": "/#services",
+                "children": []
             },
             {
                 "label": "Our Work",
-                "link": "/projects"
-            },
-            {
-                "label": "Contact",
-                "link": "/contact"
+                "link": "/#projects",
+                "children": []
             }
         ]
     },
@@ -89,5 +89,9 @@
             "icon": "fab fa-github",
             "title": "Github"
         }
-    ]
+    ],
+    "button": {
+        "label": "Contact us",
+        "link": "/contact"
+    }
 }

@@ -13,7 +13,7 @@ const IntelligentForecasting = () => {
   } = Data;
 
   return (
-    <Layouts>
+    <Layouts noFooter>
       <PageBanner
         pageTitle={title}
         subtitle={subtitle}

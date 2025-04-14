@@ -3,6 +3,6 @@
     "title": "Ready to bring your <span class=\"mil-thin\">ideas to</span> life? <br> We're <span class=\"mil-thin\">here to help</span>",
     "button": {
         "label": "Contact us",
-        "link": "/#contact"
+        "link": "/contact"
     }
 }

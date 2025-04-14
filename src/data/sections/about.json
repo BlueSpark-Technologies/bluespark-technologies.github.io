@@ -9,5 +9,5 @@
     },
     "title": "Here is <span class=\"mil-thin\">where </span><br/>our <span class=\"mil-thin\">common mission starts</span>",
     "description": "<p>At Blue Spark Technologies, we drive innovation through custom software development tailored to your unique needs.</p> <p>Our team of experts in web development, microservices, data engineering, and machine learning collaborates closely with you to deliver exceptional solutions.</p><p>Located in Cluj-Napoca, Romania, we harness cutting-edge technology to empower businesses across various industries.</p><p>Partner with us to transform your ideas into reality and achieve your goals efficiently and effectively.</p>",
-    "subtitle": "<a href='#contact'><u>Get in touch</u></a>"
+    "subtitle": "<a href='/contact'><u>Get in touch</u></a>"
 }

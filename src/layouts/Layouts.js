@@ -1,13 +1,11 @@
 import { useEffect } from "react";
 import { ScrollAnimation } from "../common/scrollAnims";
-//import { PreloaderAnimation } from "../common/preloader";
 import { CursorAnimation } from "../common/cursor";
 import { AnchorSscroll } from "../common/utilits";
 import { CurrentPageLabel } from "../common/utilits";
 
 import Footer from "./footers/Index";
 import Header from "./headers/Index";
-//import Preloader from "./preloader/Index";
 import Cursor from "./cursor/Index";
 import ScrollbarProgress from "./scrollbar-progress/Index";
 
@@ -20,7 +18,6 @@ const Layouts = ({
   extraClass,
 }) => {
   useEffect(() => {
-    //PreloaderAnimation();
     ScrollAnimation();
     CursorAnimation();
     AnchorSscroll();
@@ -30,8 +27,6 @@ const Layouts = ({
   return (
     <div className="mil-wrapper" id="top">
       <Cursor />
-
-      {/* <Preloader /> */}
 
       <ScrollbarProgress />
 

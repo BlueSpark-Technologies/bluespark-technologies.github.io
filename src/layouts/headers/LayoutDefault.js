@@ -32,6 +32,7 @@ const DefaultHeader = ({ extraClass }) => {
 
   const clickedMobileMenuItemParent = (e) => {
     e.preventDefault();
+    setToggle(!toggle);
 
     const lists = document.querySelectorAll(".mil-has-children ul");
     lists.forEach((list) => {
@@ -85,7 +86,9 @@ const DefaultHeader = ({ extraClass }) => {
                           onClick={
                             item.children != 0
                               ? (e) => clickedMobileMenuItemParent(e)
-                              : ""
+                              : (e) => {
+                                  setToggle(!toggle);
+                                }
                           }
                         >
                           {item.label}
@@ -128,61 +131,29 @@ const DefaultHeader = ({ extraClass }) => {
                   </div>
                   <div className="mil-menu-right">
                     <div className="row">
-                      <div className="col-lg-8 mil-mb-60">
+                      <div className="col-lg-6 mil-mb-60">
                         <h6 className="mil-muted mil-mb-30">Projects</h6>
 
                         <ul className="mil-menu-list">
                           <li>
                             <Link
-                              href="/projects/project-1"
+                              href="/projects/dynamic-pricing"
                               className="mil-light-soft"
                             >
-                              Interior design studio
+                              Dynamic Pricing
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/projects/project-2"
+                              href="/projects/intelligent-forecasting"
                               className="mil-light-soft"
                             >
-                              Home Security Camera
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/projects/project-3"
-                              className="mil-light-soft"
-                            >
-                              Kemia Honest Skincare
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/projects/project-4"
-                              className="mil-light-soft"
-                            >
-                              Cascade of Lava
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/projects/project-5"
-                              className="mil-light-soft"
-                            >
-                              Air Pro by Molekule
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/projects/project-6"
-                              className="mil-light-soft"
-                            >
-                              Tony's Chocolonely
+                              Intelligent Forecasting
                             </Link>
                           </li>
                         </ul>
                       </div>
-                      <div className="col-lg-4 mil-mb-60">
+                      <div className="col-lg-6 mil-mb-60">
                         <h6 className="mil-muted mil-mb-30">Useful links</h6>
 
                         <ul className="mil-menu-list">
@@ -201,16 +172,16 @@ const DefaultHeader = ({ extraClass }) => {
                               Cookie Policy
                             </a>
                           </li>
-                          <li>
+                          {/* <li>
                             <a href="#." className="mil-light-soft">
                               Careers
                             </a>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
                     <div className="mil-divider mil-mb-60"></div>
-                    <div className="row justify-content-between">
+                    {/* <div className="row justify-content-between">
                       <div className="col-lg-4 mil-mb-60">
                         <h6 className="mil-muted mil-mb-30">Canada</h6>
 
@@ -227,7 +198,7 @@ const DefaultHeader = ({ extraClass }) => {
                           <span className="mil-no-wrap">+31 174 705 811</span>
                         </p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

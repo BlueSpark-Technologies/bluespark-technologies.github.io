@@ -51,7 +51,7 @@ const OurWork = () => {
                   key={`services-item-${key}`}
                   className="col-md-6 col-lg-6 mil-services-grid-item mil-services-grid-item-dark p-0"
                 >
-                  <Link href={item.link} className="mil-service-card-sm mil-service-card-sm-dark mil-up">
+                  <Link href={item.link} className="mil-service-card-sm mil-service-card-sm-dark">
                     <h5
                       className="mil-dark mil-mb-30"
                       dangerouslySetInnerHTML={{ __html: item.title }}

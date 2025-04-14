@@ -1308,16 +1308,18 @@ services
 
 .mil-services-grid {
     border-top: solid 1px $lt-10;
+    padding-bottom: 90px;
     
     &.mil-services-grid-dark {
         border-top: solid 1px $dt-10;
     }
-
+    
     & .mil-services-grid-item {
         border-right: solid 1px $lt-10;
-
+        
         &.mil-services-grid-item-dark {
             border-right: solid 1px $dt-10;
+            border-bottom: solid 1px $dt-10;
         }
 
         &:first-child {
@@ -1329,14 +1331,23 @@ services
     }
 
     @media screen and (max-width: 992px) {
-        padding-bottom: 90px;
 
         & .mil-services-grid-item {
             border-bottom: solid 1px $lt-10;
 
+            &.mil-services-grid-item-dark {
+                border-bottom: solid 1px $dt-10;
+            }
+    
+
             &:nth-child(3) {
                 border-left: solid 1px $lt-10;
             }
+
+            &.mil-services-grid-item-dark:nth-child(3) {
+                border-left: solid 1px $dt-10;
+            }
+    
         }
     }
 
@@ -1346,6 +1357,11 @@ services
         & .mil-services-grid-item {
             border-left: solid 1px $lt-10;
             border-bottom: solid 1px $lt-10;
+
+            &.mil-services-grid-item-dark {
+                border-left: solid 1px $dt-10;
+                border-bottom: solid 1px $dt-10;
+            }
         }
     }
 }

@@ -57,7 +57,7 @@ const ServicesSection = () => {
                 >
                   <div className="mil-accordion-menu">
                     <h5
-                      className="mil-muted"
+                      className="mil-muted mil-flex mil-vert-between"
                       dangerouslySetInnerHTML={{ __html: item.title + `<br/><span class='mil-light-soft mil-thin mil-text-sm'>${item.text}</span>` }}
                     />
 

@@ -2336,6 +2336,7 @@ accordion
             align-items: center;
             justify-content: center;
             position: relative;
+            flex-shrink: 0;
 
             & .mil-plus,
             & .mil-minus {

@@ -150,7 +150,7 @@ const Contact = () => {
                   <div className="mil-adaptive-right mil-up mil-mb-30">
                     <button
                       type="submit"
-                      className="mil-button mil-arrow-place"
+                      className="mil-button mil-button-dark mil-arrow-place"
                     >
                       <span>Send message</span>
                       <ArrowIcon />

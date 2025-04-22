@@ -18,7 +18,7 @@ const Contact = () => {
       />
 
       {/* map */}
-      <div className="mil-map-frame mil-up">
+      {/* <div className="mil-map-frame mil-up">
         <div className="mil-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2733.154156073748!2d23.6017701!3d46.761857799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c3195683c67%3A0xb9695b41d046622d!2sStrada%20Nicolae%20Iorga%2023%2C%20Cluj-Napoca%20400638!5e0!3m2!1sen!2sro!4v1744641647923!5m2!1sen!2sro"
@@ -28,12 +28,28 @@ const Contact = () => {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
-      </div>
+      </div> */}
       {/* map end */}
 
       {/* contact form */}
       <section id="contact">
-        <div className="container mil-p-120-90">
+        <div className="contact-info mil-mb-60">
+          <a
+            aria-label="Call us at ‭+40 749 424180‬"
+            href="tel:%E2%80%AD+40 749 424180%E2%80%AC"
+          >
+            <img src="/img/icons/phone.svg" alt="phone-icon" />
+            <span className="mil-blue-soft mil-text-xl">‭+40 749 424180‬</span>
+          </a>
+          <a
+            aria-label="Email us at hello@bluespark.ro"
+            href="mailto:hello@bluespark.ro"
+          >
+            <img src="/img/icons/mail.svg" alt="mail-icon" />
+            <span className="mil-blue-soft mil-text-xl">hello@bluespark.ro</span>
+          </a>
+        </div>
+        <div style={{ opacity: 0.3 }} className="container mil-p-120-90">
           <h3 className="mil-center mil-up mil-mb-120">
             Let's <span className="mil-thin">Talk</span>
           </h3>
@@ -151,6 +167,8 @@ const Contact = () => {
                     <button
                       type="submit"
                       className="mil-button mil-button-dark mil-arrow-place"
+                      disabled={true}
+                      style={{ cursor: "not-allowed" }}
                     >
                       <span>Send message</span>
                       <ArrowIcon />

@@ -1,13 +1,10 @@
 {
     "image": {
-        "url": "/img/photo/our_studio.jpeg",
-        "alt": "img"
+        "url": "/img/photo/spark.png",
+        "alt": "spark"
     },
-    "avatar": {
-        "image": "/img/faces/customers/2.jpg",
-        "alt": "Founder"
-    },
-    "title": "Here is <span class=\"mil-thin\">where </span><br/>our <span class=\"mil-thin\">common mission starts</span>",
-    "description": "<p>At Blue Spark Technologies, we drive innovation through custom software development tailored to your unique needs.</p> <p>Our team of experts in web development, microservices, data engineering, and machine learning collaborates closely with you to deliver exceptional solutions.</p><p>Located in Cluj-Napoca, Romania, we harness cutting-edge technology to empower businesses across various industries.</p><p>Partner with us to transform your ideas into reality and achieve your goals efficiently and effectively.</p>",
+
+    "title": "<p class='mil-thin mil-blue-soft'>A few years ago, we came up with a <span class='mil-bold mil-accent'>spark:</span></p>",
+    "description": "<p class='mil-text-xl mil-blue-soft'>To provide a <span class='mil-bold mil-accent'>seamless experience </span>and transform complex technology challenges into <span class='mil-bold mil-accent'>business success stories</span>.</p>",
     "subtitle": "<a href='/contact'><u>Get in touch</u></a>"
 }

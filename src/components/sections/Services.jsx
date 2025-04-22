@@ -47,6 +47,10 @@ const ServicesSection = () => {
                   dangerouslySetInnerHTML={{ __html: Data.title1 }}
                 />
               </div>
+                <h2
+                  className="mil-h1 mil-muted mil-center"
+                  dangerouslySetInnerHTML={{ __html: Data.title2 }}
+                />
             </div>
 
             <div className="row mil-services-grid m-0 pt-4">
@@ -58,7 +62,7 @@ const ServicesSection = () => {
                   <div className="mil-accordion-menu">
                     <h5
                       className="mil-muted mil-flex mil-vert-between"
-                      dangerouslySetInnerHTML={{ __html: item.title + `<br/><span class='mil-light-soft mil-thin mil-text-sm'>${item.text}</span>` }}
+                      dangerouslySetInnerHTML={{ __html: item.title }}
                     />
 
                     <div className="mil-symbol mil-h3">
@@ -70,7 +74,7 @@ const ServicesSection = () => {
 
                   <div
                     className="mil-accordion-content mil-light-soft"
-                    dangerouslySetInnerHTML={{ __html: item.description }}
+                    dangerouslySetInnerHTML={{ __html: item.text }}
                     style={{transition: "all 0.3s ease-in-out"}}
                   />
                 </div>

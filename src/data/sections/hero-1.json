@@ -2,11 +2,11 @@
     "title": "BlueSpark <span class=\"mil-thin\">Technologies</span><br> Reliable, Future-Ready <span class=\"mil-thin\">Solutions</span>",
     "description": "",
     "button1": {
-        "link": "#services",
+        "link": "/#services",
         "label": "What we do"
     },
     "button2": {
-        "link": "",
-        "label": ""
+        "link": "/#our-mission",
+        "label": "Our Mission"
     }
 }

@@ -8,7 +8,7 @@ const AboutSection = () => {
       <section id="about">
         <div className="container mil-p-120-30">
           <div className="row justify-content-between align-items-center">
-            <div className="col-lg-6 col-xl-5">
+            <div className="col-lg-5">
               <div className="mil-mb-90">
                 <h2
                   className="mil-up mil-mb-60"
@@ -25,14 +25,14 @@ const AboutSection = () => {
                 />
               </div>
             </div>
-            <div className="col-lg-5">
+            <div className="col-lg-6">
               <div className="mil-about-photo mil-mb-90">
                 <div className="mil-lines-place">
                   <LinesIcon />
                 </div>
                 <div
                   className="mil-up mil-img-frame"
-                  style={{ paddingBottom: "160%" }}
+                  style={{ paddingBottom: "100%" }}
                 >
                   <img
                     src={Data.image.url}

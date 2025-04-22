@@ -39,6 +39,11 @@ const HeroOne = () => {
                                 <ArrowIcon />
                             </Link>
 
+                            <Link href={Data.button2.link} className="mil-link mil-muted mil-arrow-place">
+                                <span>{Data.button2.label}</span>
+                                <ArrowIcon />
+                            </Link>
+
                         </div>
                     </div>
                 </div>

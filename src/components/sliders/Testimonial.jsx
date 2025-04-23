@@ -1,10 +1,9 @@
 import { SliderProps } from "@/src/common/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import Data from '@data/sliders/testimonial';
 import ArrowIcon from "@layouts/svg-icons/Arrow";
 
-const TestimonialSlider = () => {
+const TestimonialSlider = ({Data}) => {
   return (
     <>
       {/* reviews */}
@@ -43,7 +42,7 @@ const TestimonialSlider = () => {
                       >
                         {Data.items.map((item, key) => (
                         <SwiperSlide className="swiper-slide" key={`testimonial-slider-item-${key}`}>
-                          <div className="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                          <div style={{filter: 'blur(4px)'}} className="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
                               <h5 className="mil-up mil-mb-10">{item.name}</h5>
                               <p className="mil-mb-5 mil-upper mil-up mil-mb-30">{item.role}</p>
                               <p className="mil-text-xl mil-up">{item.text}</p>

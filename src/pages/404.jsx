@@ -14,7 +14,7 @@ const E404 = () => {
                 <Pentagon />
               </div>
           </div>
-          <div className="mi-invert-fix mil-up">
+          <div className="mil-invert-fix mil-up">
               <div className="container">
                   <div className="mil-404-frame">
                       <div className="mil-scale-frame">

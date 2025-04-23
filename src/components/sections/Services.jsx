@@ -11,7 +11,7 @@ const ServicesSection = () => {
     <>
       {/* services */}
       <section className="mil-dark-bg" id="services">
-        <div className="mi-invert-fix">
+        <div className="mil-invert-fix">
           <div className="mil-animation-frame">
             <div
               className="mil-animation mil-position-1 mil-scale"

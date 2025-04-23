@@ -4,6 +4,10 @@ import HeroOneSection from "@components/sections/HeroOne"
 import AboutSection from "@components/sections/About";
 import ServicesSection from "@components/sections/Services";
 import OurWork from "../components/sections/OurWork";
+import Values from "../components/sections/Values";
+import Testimonial from "../components/sections/Testimonial";
+import Reasons from "../components/sections/Reasons";
+import Separator from "../components/Separator";
 
 const Home1 = () => {
   return (
@@ -12,6 +16,10 @@ const Home1 = () => {
       <AboutSection />
       <ServicesSection />
       <OurWork />
+      <Values />
+      <Testimonial/>
+      <Reasons/>
+      <Separator/>
     </Layouts>
   );
 };

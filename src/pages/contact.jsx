@@ -7,7 +7,7 @@ import ArrowIcon from "@layouts/svg-icons/Arrow";
 
 const Contact = () => {
   return (
-    <Layouts>
+    <Layouts hideFooterButton>
       <PageBanner
         pageTitle={"Get in touch!"}
         breadTitle={"Contact"}

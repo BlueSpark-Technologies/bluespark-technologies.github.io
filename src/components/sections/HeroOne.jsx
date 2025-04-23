@@ -8,7 +8,7 @@ const HeroOne = () => {
         <>
             {/* banner */}
             <section className="mil-banner mil-dark-bg">
-                <div className="mi-invert-fix">
+                <div className="mil-invert-fix">
                     <div className="mil-animation-frame">
                         <div className="mil-animation mil-position-1 mil-scale" data-value-1="7" data-value-2="1.6">
                             <Pentagon />

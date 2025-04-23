@@ -16,6 +16,7 @@ const Layouts = ({
   noHeader,
   noFooter,
   extraClass,
+  hideFooterButton
 }) => {
   useEffect(() => {
     ScrollAnimation();
@@ -41,7 +42,7 @@ const Layouts = ({
         <div id="swupMain" className="mil-main-transition">
           {children}
 
-          {!noFooter && <Footer layout={footer} />}          
+          {!noFooter && <Footer hideButton={hideFooterButton} layout={footer} />}          
         </div>
       </div>
     </div>

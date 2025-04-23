@@ -15,7 +15,7 @@ const AboutSection = () => {
                   dangerouslySetInnerHTML={{ __html: Data.title }}
                 />
                 <div
-                  className="mil-text mil-up mil-mb-30"
+                  className="mil-up mil-mb-30"
                   dangerouslySetInnerHTML={{ __html: Data.description }}
                 />
 

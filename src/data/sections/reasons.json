@@ -1,0 +1,47 @@
+{
+  "title": "Why <span class='mil-thin mil-muted'>Business Leaders</span> Choose Us?",
+  "reasons": [
+    {
+      "title": "Track Record of Excellence",
+      "items": [
+        {
+          "text": "Proven Experience."
+        },
+        {
+          "text": "10+ years of successful collaborations."
+        },
+        {
+          "text": "Dedicated team working together for a decade."
+        }
+      ]
+    },
+    {
+      "title": "Business Impact",
+      "items": [
+        {
+          "text": "On-time project delivery."
+        },
+        {
+          "text": "Cost-effective solutions."
+        },
+        {
+          "text": "Measurable results."
+        }
+      ]
+    },
+    {
+      "title": "Expert Team",
+      "items": [
+        {
+          "text": "Senior-level specialists."
+        },
+        {
+          "text": "self drivern and self organized."
+        },
+        {
+          "text": "Proactive problem-solving."
+        }
+      ]
+    }
+  ]
+}

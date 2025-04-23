@@ -1309,7 +1309,9 @@ services
   }
 
   & .mil-services-grid-item {
-    border-right: solid 1px $lt-10;
+    border-right: solid 1px $lt-20;
+    border-top: solid 1px $lt-20;
+    border-bottom: solid 1px $lt-20;
 
     &.mil-services-grid-item-dark {
       border-right: solid 1px $dt-10;
@@ -1317,7 +1319,7 @@ services
     }
 
     &:first-child {
-      border-left: solid 1px $lt-10;
+      border-left: solid 1px $lt-20;
     }
     &:first-child.mil-services-grid-item-dark {
       border-left: solid 1px $dt-10;
@@ -1326,14 +1328,14 @@ services
 
   @media screen and (max-width: 992px) {
     & .mil-services-grid-item {
-      border-bottom: solid 1px $lt-10;
+      border-bottom: solid 1px $lt-20;
 
       &.mil-services-grid-item-dark {
         border-bottom: solid 1px $dt-10;
       }
 
       &:nth-child(3) {
-        border-left: solid 1px $lt-10;
+        border-left: solid 1px $lt-20;
       }
 
       &.mil-services-grid-item-dark:nth-child(3) {
@@ -1346,8 +1348,8 @@ services
     padding-bottom: 90px;
 
     & .mil-services-grid-item {
-      border-left: solid 1px $lt-10;
-      border-bottom: solid 1px $lt-10;
+      border-left: solid 1px $lt-20;
+      border-bottom: solid 1px $lt-20;
 
       &.mil-services-grid-item-dark {
         border-left: solid 1px $dt-10;
@@ -2686,4 +2688,11 @@ html.is-animating {
     opacity: 0;
     transition-delay: 0.3s;
   }
+}
+
+.separator {
+  border: none;
+  height: 1px;
+  background: $accent;
+  opacity: 0.8;
 }

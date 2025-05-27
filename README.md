@@ -1,2 +1,2 @@
-# bluespark.ro
-BlueSpark Technoligies Website
+# www.bluespark.ro
+BlueSpark Technologies Website

@@ -1,0 +1,99 @@
+name: "[PROD] Azure Container Apps Deploy For BST"
+
+on:
+  workflow_dispatch:
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: bluespark-technologies/bluespark-technologies.github.io
+
+jobs:
+  build-scan-push-BST-image:
+    runs-on: ubuntu-latest
+    environment: prod
+
+    permissions:
+      contents: read
+      packages: write
+      actions: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3.8.0
+        with:
+          platforms: linux/amd64
+
+      - name: Log in to GitHub Docker registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ secrets.GIT_USER }}
+          password: ${{ secrets.GIT_TOKEN }}
+
+      - name: Build container image
+        uses: docker/build-push-action@v6.10.0
+        with:
+          file: ./Dockerfile
+          platforms: linux/amd64
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          load: true
+
+      - name: Scan BST Image for Vulnerabilities
+        run: |
+          # Color variables
+          red='\033[0;31m'
+          green='\033[0;32m'
+          clear='\033[0m'
+
+          sudo apt-get update -y
+          sudo apt-get install -y wget
+          wget -qO- https://github.com/aquasecurity/trivy/releases/download/v0.58.2/trivy_0.58.2_Linux-64bit.tar.gz | tar -zxv
+          sudo mv trivy /usr/local/bin/
+
+          trivy image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }} -s CRITICAL -o json -o BST-image-vulnerabilities
+
+          if cat BST-image-vulnerabilities | grep "\"Severity\": \"CRITICAL\","; then
+            echo -e "${{ env.red }}CRITICAL vulnerabilities found, please verify!${{ env.clear }}"
+          else
+            echo -e "${{ env.green }}No CRITICAL vulnerabilities found!${{ env.clear }}"
+          fi
+
+      - name: BST Image Vulnerabilities Scan Report (CRITICAL)
+        uses: actions/upload-artifact@v4.4.2
+        with:
+          name: BST-image-vulnerabilities
+          path: BST-image-vulnerabilities
+
+      - name: Push Docker Image
+        run: |
+          docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+  deploy-BST-container-app:
+    runs-on: ubuntu-latest
+    environment: demo
+
+    needs: build-scan-push-BST-image
+
+    permissions:
+      id-token: write
+
+    steps:
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Deploy BST Container App
+        uses: azure/container-apps-deploy-action@v1
+        with:
+          imageToDeploy: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          registryUrl: ${{ env.REGISTRY }}
+          registryUsername: ${{ secrets.GIT_USER }}
+          registryPassword: ${{ secrets.GIT_TOKEN }}
+          containerAppName: ca-prod-bst-ui-gwc-app
+          resourceGroup: rg-prod-bst-gwc-app

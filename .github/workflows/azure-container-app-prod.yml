@@ -73,7 +73,7 @@ jobs:
 
   deploy-BST-container-app:
     runs-on: ubuntu-latest
-    environment: demo
+    environment: prod
 
     needs: build-scan-push-BST-image
 

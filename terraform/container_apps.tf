@@ -64,7 +64,7 @@ module "ca-bst-ui" {
           secret_name = "recaptcha-secret-key"
         },
         {
-          name        = "EMAIL_SENDER_ADDRESSs"
+          name        = "EMAIL_SENDER_ADDRESS"
           secret_name = "email-sender-address"
         },
       ]

@@ -4,6 +4,21 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 
+# --- Development Stage ---
+# Provides a development environment with hot-reloading.
+#
+# Build command:
+# docker build --target development -t bluespark-dev .
+#
+# Run command:
+# docker run -p 3000:3000 -v .:/app -v /app/node_modules bluespark-dev
+#
+FROM deps AS development
+COPY . .
+EXPOSE 3000
+CMD ["npm", "run", "dev"]
+# --- End Development Stage ---
+
 # Rebuild the source code only when needed
 FROM node:24-alpine AS builder
 WORKDIR /app

@@ -1,9 +1,15 @@
 version: '3.8'
 services:
   app:
-    build: .
+    build:
+      context: .
+      target: development
+    volumes:
+      - .:/app
+      - /app/node_modules
     ports:
-      - "3000:3000"   
+      - "3000:3000"
+    command: npm run dev
     env_file:
       - .env.local
     depends_on:
